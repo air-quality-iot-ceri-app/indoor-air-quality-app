@@ -4,9 +4,10 @@ Notre solution permet de mésurer la qualté de l'air au Ceri. Elle deploie pour
 ## Tâches : 
  La réalisation de notre solution se subdivise en plusieurs tâche : 
 * **Tâche 2 :** Lire les données **(CO2 et COV)** du capteur **IAQ Core c** depuis la **Raspberry PI**  et les transmettre à l'**Arduino Leonardo**. 
-* **Tâche 3 :** Lire les données **(température et humidité)** du capteur **DHT11** depuis la carte **Arduino Leonardo**, recevoir les données du capteur **IAQ Core C** depuis la **Raspberry PI** et envoyer tous les données capturés au serveur **TTN**.
-* **Tâche 4 :**  Récupérer les données de captures  depuis le serveur **TTN** vers un serveur en vu de les sauvegarder et  de les rendre compréhensible par une requête HTML.
-* **Tâche 5 :** Automatiser le déploiement de notre application.
+* **Tâche 3 :** Lire les données **(température et humidité)** du capteur **DHT11** depuis la carte **Arduino Leonardo**, recevoir les données du capteur **IAQ Core C** depuis la **Raspberry PI** et envoyer tous les données capturés au serveur **TTN**
+* **Tâche 4 :**  Installer et configurer une **passerelle TTN** dans lequel on rajouter une **Application** et on enregistre notre **objet connecté**.
+* **Tâche 5 :**  Récupérer les données de captures  depuis le serveur **TTN** vers un serveur en vu de les sauvegarder et  de les rendre compréhensible par une requête HTML.
+* **Tâche 6 :** Automatiser le déploiement de notre application.
 
 ### Tâche 1 : 
 Pour la réalisation de la tâche 1, on va utiliser un code c++ se trouvant dans le fichier **iaqCore.c++**. 
@@ -82,8 +83,8 @@ Dans le client, on tape :
 Mainteanant, on peut déploier notre solution **node-red** et après pour y accéder,  on tape dans le navigateur :
 ```http://"adresse du serveur node-red":1800/ui
 ```
-
 ## Tache 4:
+## Tache 5:
 Le bash !
 
 
