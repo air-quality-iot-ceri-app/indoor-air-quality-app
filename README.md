@@ -6,7 +6,7 @@ Notre solution permet de mésurer la qualté de l'air au Ceri. Elle deploie pour
 * **Tâche 1 :** Lire les données **(CO2 et COV)** du capteur **IAQ Core c** depuis la **Raspberry PI**  et les transmettre à l'**Arduino Leonardo**. 
 * **Tâche 2 :** Lire les données **(température et humidité)** du capteur **DHT11** depuis la carte **Arduino Leonardo**, recevoir les données du capteur **IAQ Core C** depuis la **Raspberry PI** et envoyer tous les données capturés au serveur **TTN**
 * **Tâche 3 :**  Installer et configurer une **passerelle TTN** dans lequel on rajouter une **Application** et on enregistre notre **objet connecté**.
-* **Tâche 4 :**  Récupérer les données de captures  depuis le serveur **TTN** vers un serveur en vu de les sauvegarder, de les rendre compréhensible par es requêtes HTML et de permettre aussi bien un accès local que distant.
+* **Tâche 4 :**  Récupérer les données de captures  depuis le serveur **TTN** vers un serveur en vu de les sauvegarder, de les rendre compréhensible par des requêtes HTML et de permettre aussi bien un accès local que distant.
 * **Tâche 5 :** Automatiser le déploiement de notre application.
 
 ### Tâche 1 : 
@@ -139,9 +139,6 @@ Mainteanant, on peut déploier notre solution **node-red** et après pour y acc�
 ```http
 http://"adresse du serveur node-red":1800/ui
 ```
-L'accès distant est ainsi donc prêt ! Pour l'accès local, on va suivre la même procédure que pour le serveur à la différence que cette fois-ci on l'éxecute sur notre Raspberry Pi et c'est le fichier **raspberry-pi-flow.json** qu'on importe au lieu du fichier **server-flow.json**
-
-Ainsi l'accès local et distant sont mise en place!
 
 
 
