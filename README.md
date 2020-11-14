@@ -19,7 +19,7 @@ Pour l'installer, taper :
 ```
 Pour compiler le code, se localiser dans le dossier source du code **c++** et taper : 
 ``` 
-    g++ /*.c /*.cpp -o final
+    g++ *.c *.cpp -o final
 ```
 Et pour l'éxecuter, il faut taper : 
 ``` 
