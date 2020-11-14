@@ -13,22 +13,26 @@ Notre solution permet de mésurer la qualté de l'air au Ceri. Elle deploie pour
 Pour la réalisation de la tâche 1, on va utiliser un code c++ se trouvant dans le fichier **iaqCore.c++**. 
 Maintenant, pour rendre ce code exécutable sur la Raspberry Pi on doit le compiler. Pour ce faire, on utilise **g++** qui est un excellent compilateur pour C++.
 Pour l'installer, taper : 
-``` sudo apt-get update 
-    sudo apt-get install g++
+``` 
+   sudo apt-get update 
+   sudo apt-get install g++
 ```
 Pour compiler le code, se localiser dans le dossier source du code **c++** et taper : 
-``` g++ /*.c /*.cpp -o final
+``` 
+    g++ /*.c /*.cpp -o final
 ```
 Et pour l'éxecuter, il faut taper : 
-``` ./final
+``` 
+   ./final
 ```
 Ainsi la tâche 1 est réalisée. On peut maintenant lire les données capteur **IAQ Core C** et les envoyer à l'**Arduino Leonardo**.
 
 ### Tâche 2 : 
 Pour la réalisation de la tâche 2, on a besoin d'installer l'application **arduino** pour pouvoir manipuler les cartes **Arduino**.
 Pour l'installer, taper : 
-``` sudo apt-get update
-    sudo apt-get install arduino
+``` 
+   sudo apt-get update
+   sudo apt-get install arduino
 ```
 On installe maintenant les **library** nécessaire au bon fonctionnement de notre code à savoir : 
 - ThethingsNetwork
@@ -41,12 +45,14 @@ Une fois ces **Library** installés, on compile le code *DHT_IAQ.ino* et on le t
 ### Tâche 3 : 
 On va mettre en place notre serveur. On va installer **Node-red**. 
 Pour ce faire, on va installer d'abord **nodeJs** avec :
-``` sudo apt-get update
+``` 
+    sudo apt-get update
     sudo apt-get install nodejs
 ```
 On utilise maintenant **npm** pour installer node-red en mode gloabal et on le lannce.
 
-``` sudo npm install -g node-red
+``` 
+    sudo npm install -g node-red
     node-red
 ```
 Une fois **node-red** installé, on va installer les nodes : 
