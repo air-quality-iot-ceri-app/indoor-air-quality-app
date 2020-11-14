@@ -38,51 +38,44 @@ int main()
 	unsigned char buff[11];
   
   Ci2c *iaqcorec;
-	iaqcorec = new Ci2c('1',IAQCOREC_ADDRESS);
+  iaqcorec = new Ci2c('1',IAQCOREC_ADDRESS);
   
   if(RS232_OpenComport(cport_nr, bdrate, mode)){
-    cout << "Can not open comport\n" << endl;
-    return(0);
+    	cout << "Can not open comport\n" << endl;
+  return(0);
   }
-  
-  //usleep(2000000);
+ 
   sleep(2);
 
   while(1) {
 		
-		iaqcorec->readFromI2C(buff, 9);
-		co2 = buff[0]*256+buff[1];
-		cov = buff[7]*256+buff[8];
+	iaqcorec->readFromI2C(buff, 9);
+	co2 = buff[0]*256+buff[1];
+	cov = buff[7]*256+buff[8];
   
-    itoa(co2, co2_c);
-    itoa(cov, cov_c);
-    strcat(co2_c, "/");
-    strcat(co2_c, cov_c);
+        itoa(co2, co2_c);
+   	itoa(cov, cov_c);
+    	strcat(co2_c, "/");
+    	strcat(co2_c, cov_c);
     
-    status = buff[2];
+        status = buff[2];
     
-    //usleep(3000000);
-    sleep(3);
+    	sleep(3);
     
-		switch(status) {
-      
-			case 0:
-				//cout << "CO2 = " << co2 << " -  COV = " << cov << endl;
-        cout << co2_c  << endl;
-        RS232_cputs(cport_nr, co2_c );  
-        //usleep(5000000);
-        //sleep(5);
-				break;
+    	switch(status) {
+		case 0:
+        		cout << co2_c  << endl;
+        		RS232_cputs(cport_nr, co2_c );  
+			break;	
+		    
+		case 1: 
+			cout << "Busy : wait for updated datas" << endl;
+			break;
 			
-			case 1: 
-				cout << "Busy : wait for updated datas" << endl;
-				break;
-			
-			default: 
-				cout << "Error : non-realistic values" << endl;
+		default: 
+			cout << "Error : non-realistic values" << endl;
+   	}
+
+    	sleep(22);
     }
-    //usleep(10000000);
-    sleep(22);
-  }
-  return(0);
-}
+ return(0);}
