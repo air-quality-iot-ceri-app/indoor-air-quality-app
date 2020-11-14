@@ -43,7 +43,7 @@ Pour installer une **library**, on clicque sur :
 Une fois ces **Library** installés, on compile le code *DHT_IAQ.ino* et on le téléverse sur l'**arduino**.
 
 
-## Tache 3:
+## Tache 3 :
 Pour installer une passerelle The Things Network, nous devons disposer d'un ordinateur muni d'une carte wifi.
 En effet, la seconde étape consiste à se connecter à un réseau wifi fournit par la passerelle.
 L'installation se fait en 4 étapes :
@@ -91,7 +91,7 @@ https://www.youtube.com/watch?v=28Fh5OF8ev0
 ```
 
 
-### Tâche 3 : 
+### Tâche 4 : 
 On va mettre en place notre serveur. On va installer **Node-red**. 
 Pour ce faire, on va installer d'abord **nodeJs** avec :
 ``` 
