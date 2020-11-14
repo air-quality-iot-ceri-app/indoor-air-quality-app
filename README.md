@@ -106,6 +106,26 @@ Pour réaliser dans les différentes étapes, on suit le tutoriel vidéo suivant
 ```https
 https://www.youtube.com/watch?v=cJNK4y1is2Q
 ```
+**Ajout d'une application**
+
+Pour ajouter une application, à partir de la console, on clique sur **APPLICATIONS**.
+
+Par Applications, il faut entendre tout ce que vos objets communiquent sur Internet. On peut également voir
+une application comme une collection d'objets (Devices). Pour pouvoir enregistrer un objet connecté sur la
+passerelle, il faut nécessairement disposer d'une application dans laquelle le ranger.
+
+Si vous ajouter votre première application, vous pouvez cliquer sur Get started by adding one, sinon cliquez
+sur **+ add application**
+
+Voici un tutorial vidéo montrant en détail les étapes à suivre:
+```https
+    Tutoriel video : https://www.youtube.com/watch?v=JrNjY-pGuno
+```
+On complète dans le formulaire les champs Application ID et Description. Laissons The Things Network décider
+de l'attribution d'un identifiant Application EUI (Extended Unique Identifier).
+
+Cliquez sur le bouton Add application en bas de la page. Nous pouvons maintenant ajouter des objets
+connectés à cette application.
 
 ## Tache 5:
 Le bash !
