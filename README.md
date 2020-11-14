@@ -119,7 +119,7 @@ sur **+ add application**
 
 Voici un tutorial vidéo montrant en détail les étapes à suivre:
 ```https
-    Tutoriel video : https://www.youtube.com/watch?v=JrNjY-pGuno
+Tutoriel video : https://www.youtube.com/watch?v=JrNjY-pGuno
 ```
 On complète dans le formulaire les champs Application ID et Description. Laissons The Things Network décider
 de l'attribution d'un identifiant Application EUI (Extended Unique Identifier).
@@ -128,12 +128,13 @@ Cliquez sur le bouton Add application en bas de la page. Nous pouvons maintenant
 connectés à cette application.
 
 **Ajout d'un objet connecté**
+
 Nous allons ajouter les deux capteurs **DHT** et **IAQ** construits autour de la carte The Things Uno
 qui intègre une puce LoRa de chez Microchip.
 
 A ce stade, les différentes étapes de configuration sont montrées sur le tutorial suivant:
 ```https
-   https://www.youtube.com/watch?v=28Fh5OF8ev0
+https://www.youtube.com/watch?v=28Fh5OF8ev0
 ```
 
 
