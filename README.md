@@ -81,7 +81,8 @@ Dans le client, on tape :
  CREATE USER alassane_samia WITH PASSWORD 'alassane_samia' WITH ALL PRIVILEGES
 ```
 Mainteanant, on peut déploier notre solution **node-red** et après pour y accéder,  on tape dans le navigateur :
-```http://"adresse du serveur node-red":1800/ui
+```
+http://"adresse du serveur node-red":1800/ui
 ```
 ## Tache 4:
 Pour installer une passerelle The Things Network, nous devons disposer d'un ordinateur muni d'une carte wifi.
@@ -92,10 +93,12 @@ L'installation se fait en 4 étapes :
  - Configuration
  - Premier message
 Pour procéder à l'enregistrement de la passerelle sur les serveurs de **TheThingsNetwork** (TTN), on connecte à l'adresse suivante : 
-```https://activate.thethingsnetwork.org/
+```
+https://activate.thethingsnetwork.org/
 ```
 Pour réaliser dans les différentes étapes, on suit le tutoriel vidéo suivant :
-```https://www.youtube.com/watch?v=cJNK4y1is2Q
+```
+https://www.youtube.com/watch?v=cJNK4y1is2Q
 ```
 
 ## Tache 5:
