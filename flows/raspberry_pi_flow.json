@@ -1,0 +1,1255 @@
+[
+    {
+        "id": "5bb0668c.81c5f8",
+        "type": "tab",
+        "label": "Raspberry PI",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "462abce3.5677c4",
+        "type": "ui_gauge",
+        "z": "5bb0668c.81c5f8",
+        "name": "",
+        "group": "875500dc.eea37",
+        "order": 1,
+        "width": "0",
+        "height": "0",
+        "gtype": "gage",
+        "title": "Humidity",
+        "label": "%",
+        "format": "{{msg.payload}}",
+        "min": 0,
+        "max": "95",
+        "colors": [
+            "#0cb500",
+            "#e0e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "x": 660,
+        "y": 140,
+        "wires": []
+    },
+    {
+        "id": "161527de.51b6b8",
+        "type": "ui_gauge",
+        "z": "5bb0668c.81c5f8",
+        "name": "",
+        "group": "875500dc.eea37",
+        "order": 0,
+        "width": "0",
+        "height": "0",
+        "gtype": "gage",
+        "title": "Temperature",
+        "label": "°C",
+        "format": "{{msg.payload}}",
+        "min": 0,
+        "max": "50",
+        "colors": [
+            "#00b500",
+            "#f3f32b",
+            "#ca3838"
+        ],
+        "seg1": "10",
+        "seg2": "10",
+        "x": 670,
+        "y": 60,
+        "wires": []
+    },
+    {
+        "id": "64db0c55.b5c084",
+        "type": "ui_gauge",
+        "z": "5bb0668c.81c5f8",
+        "name": "",
+        "group": "dfacb7d3.ddfd08",
+        "order": 2,
+        "width": "0",
+        "height": "0",
+        "gtype": "gage",
+        "title": "CO2",
+        "label": "ppm",
+        "format": "{{msg.payload}}",
+        "min": 0,
+        "max": "4000",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#f90f24"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "x": 650,
+        "y": 220,
+        "wires": []
+    },
+    {
+        "id": "70e56e18.70c15",
+        "type": "ui_gauge",
+        "z": "5bb0668c.81c5f8",
+        "name": "",
+        "group": "dfacb7d3.ddfd08",
+        "order": 3,
+        "width": "0",
+        "height": "0",
+        "gtype": "gage",
+        "title": "COV",
+        "label": "ppb",
+        "format": "{{msg.payload}}",
+        "min": 0,
+        "max": "1300",
+        "colors": [
+            "#11b4d5",
+            "#374dae",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "x": 650,
+        "y": 300,
+        "wires": []
+    },
+    {
+        "id": "beb98b55.510c98",
+        "type": "ui_chart",
+        "z": "5bb0668c.81c5f8",
+        "name": "",
+        "group": "8f36f9bf.136b68",
+        "order": 1,
+        "width": "6",
+        "height": "4",
+        "label": "Temperature",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "auto",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "0",
+        "ymax": "50",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "86400",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#eef748",
+            "#fa9c0e",
+            "#ff2f01",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "useOldStyle": false,
+        "outputs": 1,
+        "x": 670,
+        "y": 100,
+        "wires": [
+            [
+                "f6516a09.385258"
+            ]
+        ]
+    },
+    {
+        "id": "1e939d.84051c63",
+        "type": "ui_chart",
+        "z": "5bb0668c.81c5f8",
+        "name": "",
+        "group": "8f36f9bf.136b68",
+        "order": 1,
+        "width": "6",
+        "height": "4",
+        "label": "Humidity",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "auto",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "100",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "86400",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#0aae1c",
+            "#7ced50",
+            "#f9ff0e",
+            "#63a433",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "useOldStyle": false,
+        "outputs": 1,
+        "x": 660,
+        "y": 180,
+        "wires": [
+            [
+                "eb2643ae.2a3f1"
+            ]
+        ]
+    },
+    {
+        "id": "6a3701a9.b6556",
+        "type": "ui_chart",
+        "z": "5bb0668c.81c5f8",
+        "name": "",
+        "group": "90fd291a.120768",
+        "order": 1,
+        "width": "6",
+        "height": "4",
+        "label": "CO2",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "dd HH:mm",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "3000",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "86400",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#ff053a",
+            "#aa3d32",
+            "#5e5a59",
+            "#2ca02c",
+            "#98df8a",
+            "#ff2425",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "useOldStyle": false,
+        "outputs": 1,
+        "x": 650,
+        "y": 260,
+        "wires": [
+            [
+                "19e0011b.c1c0ef"
+            ]
+        ]
+    },
+    {
+        "id": "645d9e1d.8414a",
+        "type": "ui_chart",
+        "z": "5bb0668c.81c5f8",
+        "name": "",
+        "group": "90fd291a.120768",
+        "order": 1,
+        "width": "6",
+        "height": "4",
+        "label": "COV",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "dd HH:mm",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "1300",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "86400",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#0bbec5",
+            "#7098cd",
+            "#513293",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "useOldStyle": false,
+        "outputs": 1,
+        "x": 650,
+        "y": 340,
+        "wires": [
+            [
+                "b1417527.1f2dd8"
+            ]
+        ]
+    },
+    {
+        "id": "c6dbabb6.cfaf98",
+        "type": "ui_gauge",
+        "z": "5bb0668c.81c5f8",
+        "name": "",
+        "group": "c37ddc45.d9c33",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "SNR",
+        "label": "dB",
+        "format": "{{value}}",
+        "min": "-5",
+        "max": "20",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "x": 650,
+        "y": 400,
+        "wires": []
+    },
+    {
+        "id": "8bb7f92.cb12108",
+        "type": "ui_gauge",
+        "z": "5bb0668c.81c5f8",
+        "name": "",
+        "group": "c37ddc45.d9c33",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "RSSI",
+        "label": "dBm",
+        "format": "{{value}}",
+        "min": "-150",
+        "max": "5",
+        "colors": [
+            "#d3e401",
+            "#bc3812",
+            "#2c0c0c"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "x": 650,
+        "y": 460,
+        "wires": []
+    },
+    {
+        "id": "bf42e9b6.27a398",
+        "type": "function",
+        "z": "5bb0668c.81c5f8",
+        "name": "Query_function",
+        "func": "let start = msg.payload*1000000\nlet end = (24*60*60*1000)*1000000 + start\nmsg.query=\"Select * from Measures where time>=\"+start+\" and time<\"+end+\" order by time asc\";\nreturn msg;\n\n//1602659462584458000",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 700,
+        "y": 780,
+        "wires": [
+            [
+                "27b4b0a8.b12ee"
+            ]
+        ]
+    },
+    {
+        "id": "27b4b0a8.b12ee",
+        "type": "influxdb in",
+        "z": "5bb0668c.81c5f8",
+        "influxdb": "759ab45b.50c37c",
+        "name": "At-home",
+        "query": "Measures",
+        "rawOutput": false,
+        "precision": "",
+        "retentionPolicy": "",
+        "x": 740,
+        "y": 900,
+        "wires": [
+            [
+                "e5b0ec53.a38bc",
+                "a2efd3ea.68c37",
+                "b2583a1b.19c6e8",
+                "907169a8.337b58",
+                "d844a040.326a3"
+            ]
+        ]
+    },
+    {
+        "id": "7e2ed9ce.336a78",
+        "type": "ui_chart",
+        "z": "5bb0668c.81c5f8",
+        "name": "",
+        "group": "32a3f789.916448",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "label": "CO2_DB",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "0",
+        "ymax": "2000",
+        "removeOlder": "4",
+        "removeOlderPoints": "",
+        "removeOlderUnit": "604800",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "useOldStyle": false,
+        "outputs": 1,
+        "x": 1200,
+        "y": 720,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "b25acdd7.ceb6",
+        "type": "ui_chart",
+        "z": "5bb0668c.81c5f8",
+        "name": "",
+        "group": "32a3f789.916448",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "label": "COV_DB",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "0",
+        "ymax": "600",
+        "removeOlder": "4",
+        "removeOlderPoints": "",
+        "removeOlderUnit": "604800",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#27a540",
+            "#cde74b",
+            "#ffa70f",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "useOldStyle": false,
+        "outputs": 1,
+        "x": 1200,
+        "y": 780,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "e5b0ec53.a38bc",
+        "type": "function",
+        "z": "5bb0668c.81c5f8",
+        "name": "CO2_function",
+        "func": "\nlet a = [{\nseries: [ \"CO2\"],\ndata: [\n    \n    /*[{ \"x\": 1504029634400, \"y\": 28 },\n     { \"x\": 1504029637959, \"y\": 32 },\n     { \"x\": 1504029640317, \"y\": 30 }\n    ]*/\n],\nlabels: [\"CO2\"]\n}]\n\nvar co2 = [];\n\n\nmsg.payload.forEach(value=>{\n    co2.push({\n        x : value.time,\n        y : value.co2\n    })\n    \n})\n\na[0].data.push(co2)\n\n//a.data.push(hum)\n\nmsg.payload = a;\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 1000,
+        "y": 720,
+        "wires": [
+            [
+                "7e2ed9ce.336a78"
+            ]
+        ]
+    },
+    {
+        "id": "a2efd3ea.68c37",
+        "type": "function",
+        "z": "5bb0668c.81c5f8",
+        "name": "COV_function",
+        "func": "\nlet a = [{\nseries: [ \"COV\"],\ndata: [\n    \n    /*[{ \"x\": 1504029634400, \"y\": 28 },\n     { \"x\": 1504029637959, \"y\": 32 },\n     { \"x\": 1504029640317, \"y\": 30 }\n    ]*/\n],\nlabels: [\"COV\"]\n}]\n\nvar cov = [];\n\n\nmsg.payload.forEach(value=>{\n    cov.push({\n        x : value.time,\n        y : value.cov\n    })\n    \n})\n\na[0].data.push(cov)\n\n//a.data.push(hum)\n\nmsg.payload = a;\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 1000,
+        "y": 780,
+        "wires": [
+            [
+                "b25acdd7.ceb6"
+            ]
+        ]
+    },
+    {
+        "id": "4ef6ee14.04ed6",
+        "type": "ui_chart",
+        "z": "5bb0668c.81c5f8",
+        "name": "",
+        "group": "3078f6a0.a9202a",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "label": "temperature_DB",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "0",
+        "ymax": "50",
+        "removeOlder": "4",
+        "removeOlderPoints": "",
+        "removeOlderUnit": "604800",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#b31e3c",
+            "#91738f",
+            "#130a01",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "useOldStyle": false,
+        "outputs": 1,
+        "x": 1230,
+        "y": 840,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "f1c8843b.b1d728",
+        "type": "ui_chart",
+        "z": "5bb0668c.81c5f8",
+        "name": "",
+        "group": "3078f6a0.a9202a",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "label": "humidity_DB",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "0",
+        "ymax": "100",
+        "removeOlder": "4",
+        "removeOlderPoints": "",
+        "removeOlderUnit": "604800",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#521eb3",
+            "#6b4b7c",
+            "#211912",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "useOldStyle": false,
+        "outputs": 1,
+        "x": 1210,
+        "y": 900,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "b2583a1b.19c6e8",
+        "type": "function",
+        "z": "5bb0668c.81c5f8",
+        "name": "temp_function",
+        "func": "\nlet a = [{\nseries: [ \"Temperature\"],\ndata: [\n    \n    /*[{ \"x\": 1504029634400, \"y\": 28 },\n     { \"x\": 1504029637959, \"y\": 32 },\n     { \"x\": 1504029640317, \"y\": 30 }\n    ]*/\n],\nlabels: [\"Temperature\"]\n}]\n\nvar temp = [];\n\n\nmsg.payload.forEach(value=>{\n    temp.push({\n        x : value.time,\n        y : value.temperature\n    })\n   \n})\n\na[0].data.push(temp)\n\n//a.data.push(hum)\n\nmsg.payload = a;\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 1000,
+        "y": 840,
+        "wires": [
+            [
+                "4ef6ee14.04ed6"
+            ]
+        ]
+    },
+    {
+        "id": "907169a8.337b58",
+        "type": "function",
+        "z": "5bb0668c.81c5f8",
+        "name": "hum_function",
+        "func": "\nlet a = [{\nseries: [ \"Humidity\"],\ndata: [\n    \n    /*[{ \"x\": 1504029634400, \"y\": 28 },\n     { \"x\": 1504029637959, \"y\": 32 },\n     { \"x\": 1504029640317, \"y\": 30 }\n    ]*/\n],\nlabels: [\"Humidity\"]\n}]\n\nvar hum = [];\n\n\nmsg.payload.forEach(value=>{\n\n    hum.push({\n        x : value.time,\n        y : value.humidity,\n    })\n})\n\na[0].data.push(hum)\n\n//a.data.push(hum)\n\nmsg.payload = a;\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 1000,
+        "y": 900,
+        "wires": [
+            [
+                "f1c8843b.b1d728"
+            ]
+        ]
+    },
+    {
+        "id": "b1417527.1f2dd8",
+        "type": "function",
+        "z": "5bb0668c.81c5f8",
+        "name": "COV Alert",
+        "func": "\nvar value = msg.payload[0].data[0]\nvar length = value.length\nvar temps = new Date (value[length - 1].x)\nvar indice_valeur = length-1\nvar nombre_valeurs = 0\nvar somme = 0\nvar limite = 0\n\nif(temps.getMinutes()<15){\n    var diff = 15 - temps.getMinutes()\n    limite = 60 - diff\n\n    while (((new Date(value[indice_valeur].x)).getMinutes())+60 > limite){\n        somme += value[indice_valeur].y\n        indice_valeur--\n        nombre_valeurs++\n    }\n}\nelse{\n    limite = (temps.getMinutes())-15;\n    while ((new Date(value[indice_valeur].x)).getMinutes() > limite){\n        somme += value[indice_valeur].y\n        indice_valeur-- \n        nombre_valeurs++\n    }\n}\nvar moyenne = somme/nombre_valeurs\n\nif(moyenne > 1300){\n    return {\n        topic: \"Alert !\",\n        payload:\"La valeur moyenne de COV dans votre pièce les dernières 15 minutes est : \"+ Math.trunc(moyenne)+ \"ppb\"\n    };\n}else\n    return 0;\n//msg.payload = {\"moyenne\":(moyenne),\"nombre_total\":nombre_valeurs}\n//msg.payload = somme/nombre_valeurs\n//return msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 860,
+        "y": 340,
+        "wires": [
+            [
+                "ae7ba166.6a90e",
+                "8f1ddd99.34cfe"
+            ]
+        ]
+    },
+    {
+        "id": "19e0011b.c1c0ef",
+        "type": "function",
+        "z": "5bb0668c.81c5f8",
+        "name": "CO2 Alert",
+        "func": "\nvar value = msg.payload[0].data[0]\nvar length = value.length\nvar temps = new Date (value[length - 1].x)\nvar indice_valeur = length-1\nvar nombre_valeurs = 0\nvar somme = 0\nvar limite = 0\n\nif(temps.getMinutes()<15){\n    var diff = 15 - temps.getMinutes()\n    limite = 60 - diff\n\n    while (((new Date(value[indice_valeur].x)).getMinutes())+60 > limite){\n        somme += value[indice_valeur].y\n        indice_valeur--\n        nombre_valeurs++\n    }\n}\nelse{\n    limite = (temps.getMinutes())-15;\n    while ((new Date(value[indice_valeur].x)).getMinutes() > limite){\n        somme += value[indice_valeur].y\n        indice_valeur-- \n        nombre_valeurs++\n    }\n}\nvar moyenne = somme/nombre_valeurs\n\nif(moyenne > 730){\n    return {\n        topic: \"Alert !\",\n        payload:\"La valeur moyenne de CO2 dans votre pièce les dernières 15 minutes est : \"+ Math.trunc(moyenne)+ \"ppm\"\n    };\n}\nelse\n    return 0;\n    \n//msg.payload = {\"moyenne\":(moyenne),\"nombre_total\":nombre_valeurs}\n//msg.payload = somme/nombre_valeurs\n//return msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 860,
+        "y": 260,
+        "wires": [
+            [
+                "c7350a9.a6fc9f8",
+                "17c9958a.31801a"
+            ]
+        ]
+    },
+    {
+        "id": "eb2643ae.2a3f1",
+        "type": "function",
+        "z": "5bb0668c.81c5f8",
+        "name": "Humidity Alert",
+        "func": "\nvar value = msg.payload[0].data[0]\n\nvar length = value.length\n\nvar temps = new Date (value[length - 1].x)\n\nvar indice_valeur = length-1\nvar nombre_valeurs = 0\nvar somme = 0\nvar limite = 0\n\nif(temps.getMinutes()<15){\n    var diff = 15 - temps.getMinutes()\n    limite = 60 - diff\n\n    while (((new Date(value[indice_valeur].x)).getMinutes())+60 > limite){\n        somme += value[indice_valeur].y\n        indice_valeur--\n        nombre_valeurs++\n    }\n}\nelse{\n    limite = (temps.getMinutes())-15;\n    while ((new Date(value[indice_valeur].x)).getMinutes() > limite){\n        somme += value[indice_valeur].y\n        indice_valeur-- \n        nombre_valeurs++\n    }\n}\nvar moyenne = somme/nombre_valeurs\n\nif(moyenne > 60){\n    return {\n        topic: \"Alert !\",\n        payload:\"La valeur moyenne d'humidité dans votre pièce les dernières 15 minutes est : \"+ Math.trunc(moyenne) + \"%\"\n    };\n}\nelse\n    return 0;\n//msg.payload = {\"moyenne\":(moyenne),\"nombre_total\":nombre_valeurs}\n//msg.payload = somme/nombre_valeurs\n//return msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 880,
+        "y": 180,
+        "wires": [
+            [
+                "2f8cc91b.d946d6",
+                "87d8c7bf.7e9fa8"
+            ]
+        ]
+    },
+    {
+        "id": "f6516a09.385258",
+        "type": "function",
+        "z": "5bb0668c.81c5f8",
+        "name": "Temperature Alert",
+        "func": "\nvar value = msg.payload[0].data[0]\nvar length = value.length\nvar temps = new Date (value[length - 1].x)\nvar indice_valeur = length-1\nvar nombre_valeurs = 0\nvar somme = 0\nvar limite = 0\n\nif(temps.getMinutes()<15){\n    var diff = 15 - temps.getMinutes()\n    limite = 60 - diff\n\n    while (((new Date(value[indice_valeur].x)).getMinutes())+60 > limite){\n        somme += value[indice_valeur].y\n        indice_valeur--\n        nombre_valeurs++\n    }\n}\nelse{\n    limite = (temps.getMinutes())-15;\n    while ((new Date(value[indice_valeur].x)).getMinutes() > limite){\n        somme += value[indice_valeur].y\n        indice_valeur-- \n        nombre_valeurs++\n    }\n}\n\nvar moyenne = somme/nombre_valeurs\n\nif(moyenne > 38){\n    return {\n        topic: \"Alert !\",\n        payload:\"La valeur moyenne de température dans votre pièce pendant les dernières 15 minutes est : \"+ Math.trunc(moyenne) + \"C°\"\n    };\n}\nelse\n    return 0;\n\n//msg.payload = {\"moyenne\":(moyenne),\"nombre_total\":nombre_valeurs}\n//msg.payload = somme/nombre_valeurs\n//return msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 890,
+        "y": 100,
+        "wires": [
+            [
+                "77d71ea8.d956b",
+                "54b59f4a.1fc75"
+            ]
+        ]
+    },
+    {
+        "id": "ae7ba166.6a90e",
+        "type": "ui_audio",
+        "z": "5bb0668c.81c5f8",
+        "name": "Audio",
+        "group": "90fd291a.120768",
+        "voice": "Google français",
+        "always": "",
+        "x": 1110,
+        "y": 300,
+        "wires": []
+    },
+    {
+        "id": "c7350a9.a6fc9f8",
+        "type": "ui_audio",
+        "z": "5bb0668c.81c5f8",
+        "name": "Audio",
+        "group": "90fd291a.120768",
+        "voice": "Google français",
+        "always": true,
+        "x": 1110,
+        "y": 220,
+        "wires": []
+    },
+    {
+        "id": "2f8cc91b.d946d6",
+        "type": "ui_audio",
+        "z": "5bb0668c.81c5f8",
+        "name": "Audio",
+        "group": "8f36f9bf.136b68",
+        "voice": "Google français",
+        "always": true,
+        "x": 1110,
+        "y": 140,
+        "wires": []
+    },
+    {
+        "id": "77d71ea8.d956b",
+        "type": "ui_audio",
+        "z": "5bb0668c.81c5f8",
+        "name": "Audio",
+        "group": "8f36f9bf.136b68",
+        "voice": "Google français",
+        "always": "",
+        "x": 1110,
+        "y": 60,
+        "wires": []
+    },
+    {
+        "id": "87d8c7bf.7e9fa8",
+        "type": "ui_toast",
+        "z": "5bb0668c.81c5f8",
+        "position": "bottom right",
+        "displayTime": "3",
+        "highlight": "red",
+        "sendall": true,
+        "outputs": 0,
+        "ok": "OK",
+        "cancel": "",
+        "raw": true,
+        "topic": "",
+        "name": "Notification",
+        "x": 1130,
+        "y": 180,
+        "wires": []
+    },
+    {
+        "id": "54b59f4a.1fc75",
+        "type": "ui_toast",
+        "z": "5bb0668c.81c5f8",
+        "position": "top right",
+        "displayTime": "3",
+        "highlight": "red",
+        "sendall": true,
+        "outputs": 0,
+        "ok": "OK",
+        "cancel": "",
+        "raw": false,
+        "topic": "",
+        "name": "Notification",
+        "x": 1130,
+        "y": 100,
+        "wires": []
+    },
+    {
+        "id": "17c9958a.31801a",
+        "type": "ui_toast",
+        "z": "5bb0668c.81c5f8",
+        "position": "top right",
+        "displayTime": "3",
+        "highlight": "red",
+        "sendall": true,
+        "outputs": 0,
+        "ok": "OK",
+        "cancel": "",
+        "raw": false,
+        "topic": "",
+        "name": "Notification",
+        "x": 1130,
+        "y": 260,
+        "wires": []
+    },
+    {
+        "id": "8f1ddd99.34cfe",
+        "type": "ui_toast",
+        "z": "5bb0668c.81c5f8",
+        "position": "top right",
+        "displayTime": "3",
+        "highlight": "red",
+        "sendall": true,
+        "outputs": 0,
+        "ok": "OK",
+        "cancel": "",
+        "raw": false,
+        "topic": "",
+        "name": "Notification",
+        "x": 1130,
+        "y": 340,
+        "wires": []
+    },
+    {
+        "id": "7b4bfbc7.c4b334",
+        "type": "ui_date_picker",
+        "z": "5bb0668c.81c5f8",
+        "name": "",
+        "label": "Choisissez une date",
+        "group": "b3d25834.144b18",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "topic": "",
+        "x": 700,
+        "y": 660,
+        "wires": [
+            [
+                "bf42e9b6.27a398"
+            ]
+        ]
+    },
+    {
+        "id": "830a70ef.354e9",
+        "type": "ui_toast",
+        "z": "5bb0668c.81c5f8",
+        "position": "top right",
+        "displayTime": "5",
+        "highlight": "",
+        "sendall": true,
+        "outputs": 0,
+        "ok": "OK",
+        "cancel": "",
+        "raw": false,
+        "topic": "",
+        "name": "No data in DB this day",
+        "x": 1220,
+        "y": 640,
+        "wires": []
+    },
+    {
+        "id": "d844a040.326a3",
+        "type": "function",
+        "z": "5bb0668c.81c5f8",
+        "name": "notification_func",
+        "func": "if(msg.payload.length===0){\n    return {\n        topic: \"Pas de donnée capturée\",\n        //payload:\"La valeur de température dans votre pièce est : \"+ Math.trunc(moyenne)\n        payload:\"Il n y a pas eu de capture ce jour-là. Veuillez selectionner un autre jour !\"\n    };\n}\nreturn 0;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 1000,
+        "y": 640,
+        "wires": [
+            [
+                "830a70ef.354e9"
+            ]
+        ]
+    },
+    {
+        "id": "29c7d525.7c6b8a",
+        "type": "mqtt in",
+        "z": "5bb0668c.81c5f8",
+        "name": "mqqt frm TTN",
+        "topic": "app-samia-alassane-ceri-2020/devices/sensors-application-samia-alassane/up",
+        "qos": "2",
+        "datatype": "auto",
+        "broker": "8595ed77.f7901",
+        "x": 130,
+        "y": 100,
+        "wires": [
+            [
+                "7685319d.0d956"
+            ]
+        ]
+    },
+    {
+        "id": "7685319d.0d956",
+        "type": "function",
+        "z": "5bb0668c.81c5f8",
+        "name": "ParseData",
+        "func": "\nvalue = JSON.parse(msg.payload)\nmsg.payload ={\n  temperature : value.payload_fields.temperature, \n  humidity : value.payload_fields.humidity,\n  co2 : value.payload_fields.co2,\n  cov : value.payload_fields.cov,\n  rssi : value.metadata.gateways[0].rssi,\n  snr : value.metadata.gateways[0].snr,\n  \n} \nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 130,
+        "y": 260,
+        "wires": [
+            [
+                "251778f5.865068",
+                "dcd49b1e.b122c8",
+                "6e8d0b2f.2e9b14",
+                "bbb34614.196ad8",
+                "67dd7766.5ec458",
+                "e1c7b87b.720688",
+                "8558c606.ff3b88",
+                "53d27c17.75d214"
+            ]
+        ]
+    },
+    {
+        "id": "251778f5.865068",
+        "type": "function",
+        "z": "5bb0668c.81c5f8",
+        "name": "TemperatureFunction",
+        "func": "\nmsg.payload = msg.payload.temperature;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 400,
+        "y": 60,
+        "wires": [
+            [
+                "161527de.51b6b8",
+                "beb98b55.510c98"
+            ]
+        ]
+    },
+    {
+        "id": "dcd49b1e.b122c8",
+        "type": "function",
+        "z": "5bb0668c.81c5f8",
+        "name": "HumidityFunction",
+        "func": "\nmsg.payload = msg.payload.humidity;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 410,
+        "y": 140,
+        "wires": [
+            [
+                "462abce3.5677c4",
+                "1e939d.84051c63"
+            ]
+        ]
+    },
+    {
+        "id": "6e8d0b2f.2e9b14",
+        "type": "function",
+        "z": "5bb0668c.81c5f8",
+        "name": "co2_function",
+        "func": "\nmsg.payload = msg.payload.co2;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 410,
+        "y": 220,
+        "wires": [
+            [
+                "64db0c55.b5c084",
+                "6a3701a9.b6556"
+            ]
+        ]
+    },
+    {
+        "id": "bbb34614.196ad8",
+        "type": "function",
+        "z": "5bb0668c.81c5f8",
+        "name": "cov_function",
+        "func": "\nmsg.payload = msg.payload.cov;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 410,
+        "y": 300,
+        "wires": [
+            [
+                "70e56e18.70c15",
+                "645d9e1d.8414a"
+            ]
+        ]
+    },
+    {
+        "id": "67dd7766.5ec458",
+        "type": "function",
+        "z": "5bb0668c.81c5f8",
+        "name": "function_snr",
+        "func": "\nmsg.payload = msg.payload.snr;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 410,
+        "y": 380,
+        "wires": [
+            [
+                "c6dbabb6.cfaf98"
+            ]
+        ]
+    },
+    {
+        "id": "e1c7b87b.720688",
+        "type": "function",
+        "z": "5bb0668c.81c5f8",
+        "name": "function_rssi",
+        "func": "\nmsg.payload = msg.payload.rssi;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 410,
+        "y": 440,
+        "wires": [
+            [
+                "8bb7f92.cb12108"
+            ]
+        ]
+    },
+    {
+        "id": "8558c606.ff3b88",
+        "type": "http request",
+        "z": "5bb0668c.81c5f8",
+        "name": "",
+        "method": "POST",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "http://localhost:3000",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "authType": "",
+        "x": 390,
+        "y": 520,
+        "wires": [
+            [
+                "eed7bd14.a30a4"
+            ]
+        ]
+    },
+    {
+        "id": "eed7bd14.a30a4",
+        "type": "debug",
+        "z": "5bb0668c.81c5f8",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 670,
+        "y": 520,
+        "wires": []
+    },
+    {
+        "id": "53d27c17.75d214",
+        "type": "influxdb out",
+        "z": "5bb0668c.81c5f8",
+        "influxdb": "5848f08f.ae16e",
+        "name": "",
+        "measurement": "Measures",
+        "precision": "",
+        "retentionPolicy": "",
+        "x": 430,
+        "y": 600,
+        "wires": []
+    },
+    {
+        "id": "875500dc.eea37",
+        "type": "ui_group",
+        "z": "",
+        "name": "Temperature & humidity",
+        "tab": "dd14abbf.c242e8",
+        "order": 2,
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "dfacb7d3.ddfd08",
+        "type": "ui_group",
+        "z": "",
+        "name": "Air Quality",
+        "tab": "dd14abbf.c242e8",
+        "order": 3,
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "8f36f9bf.136b68",
+        "type": "ui_group",
+        "z": "",
+        "name": " Temperature & Humidity",
+        "tab": "931a5cd9.ed976",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "90fd291a.120768",
+        "type": "ui_group",
+        "z": "",
+        "name": "Air quality",
+        "tab": "931a5cd9.ed976",
+        "order": 2,
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "c37ddc45.d9c33",
+        "type": "ui_group",
+        "z": "",
+        "name": "Monitoring",
+        "tab": "3ca7a7a6.e47148",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "759ab45b.50c37c",
+        "type": "influxdb",
+        "z": "",
+        "hostname": "192.168.1.28",
+        "port": "8086",
+        "protocol": "http",
+        "database": "iot_app",
+        "name": "At_Home",
+        "usetls": false,
+        "tls": ""
+    },
+    {
+        "id": "32a3f789.916448",
+        "type": "ui_group",
+        "z": "",
+        "name": "Air quality",
+        "tab": "b12778f3.7462d8",
+        "order": 3,
+        "disp": true,
+        "width": "8",
+        "collapse": false
+    },
+    {
+        "id": "3078f6a0.a9202a",
+        "type": "ui_group",
+        "z": "",
+        "name": " Temperature & Humidity",
+        "tab": "b12778f3.7462d8",
+        "order": 2,
+        "disp": true,
+        "width": "8",
+        "collapse": false
+    },
+    {
+        "id": "b3d25834.144b18",
+        "type": "ui_group",
+        "z": "",
+        "name": "Choix de la date",
+        "tab": "b12778f3.7462d8",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "8595ed77.f7901",
+        "type": "mqtt-broker",
+        "z": "",
+        "name": "mqqt from TTN",
+        "broker": "eu.thethings.network",
+        "port": "1883",
+        "clientid": "",
+        "usetls": false,
+        "compatmode": false,
+        "keepalive": "60",
+        "cleansession": true,
+        "birthTopic": "app-samia-alassane-ceri-2020/devices/sensors-application-samia-alassane/up",
+        "birthQos": "0",
+        "birthPayload": "",
+        "closeTopic": "",
+        "closeQos": "0",
+        "closePayload": "",
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": ""
+    },
+    {
+        "id": "5848f08f.ae16e",
+        "type": "influxdb",
+        "z": "",
+        "hostname": "10.126.9.49",
+        "port": "8086",
+        "protocol": "http",
+        "database": "iot_app",
+        "name": "",
+        "usetls": false,
+        "tls": ""
+    },
+    {
+        "id": "dd14abbf.c242e8",
+        "type": "ui_tab",
+        "z": "",
+        "name": "Measures",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "931a5cd9.ed976",
+        "type": "ui_tab",
+        "z": "",
+        "name": "Last 24h history",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "3ca7a7a6.e47148",
+        "type": "ui_tab",
+        "z": "",
+        "name": "monitoring",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "b12778f3.7462d8",
+        "type": "ui_tab",
+        "z": "",
+        "name": "All histories",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
+    }
+]
