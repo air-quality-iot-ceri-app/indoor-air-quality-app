@@ -84,6 +84,20 @@ Mainteanant, on peut déploier notre solution **node-red** et après pour y acc�
 ```http://"adresse du serveur node-red":1800/ui
 ```
 ## Tache 4:
+Pour installer une passerelle The Things Network, nous devons disposer d'un ordinateur muni d'une carte wifi.
+En effet, la seconde étape consiste à se connecter à un réseau wifi fournit par la passerelle.
+L'installation se fait en 4 étapes :
+ - Enregistrement
+ - Connexion
+ - Configuration
+ - Premier message
+Pour procéder à l'enregistrement de la passerelle sur les serveurs de **TheThingsNetwork** (TTN), on connecte à l'adresse suivante : 
+```https://activate.thethingsnetwork.org/
+```
+Pour réaliser dans les différentes étapes, on suit le tutoriel vidéo suivant :
+```https://www.youtube.com/watch?v=cJNK4y1is2Q
+```
+
 ## Tache 5:
 Le bash !
 
