@@ -35,7 +35,7 @@ On installe maintenant les **library** nécessaire au bon fonctionnement de notr
 Pour installer une **library**, on clicque sur : 
 **Croquis** dans le ménu > puis sur inclure une Bibliothèque > et dans la fénêtre qui s'ouvre on tape le nom de la bibliothèque qu'on veut ajouter .
 
-Une fois ces **Library** installés, on compile le code *DHT_modifie.ino* et on le téléverse sur l'**arduino**.
+Une fois ces **Library** installés, on compile le code *DHT_IAQ.ino* et on le téléverse sur l'**arduino**.
 
 ### Tâche 3 : 
 On va mettre en place notre serveur. On va installer **Node-red**. 
