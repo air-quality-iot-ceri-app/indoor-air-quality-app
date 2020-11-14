@@ -127,6 +127,16 @@ de l'attribution d'un identifiant Application EUI (Extended Unique Identifier).
 Cliquez sur le bouton Add application en bas de la page. Nous pouvons maintenant ajouter des objets
 connectés à cette application.
 
+**Ajout d'un objet connecté**
+Nous allons ajouter les deux capteurs **DHT** et **IAQ** construits autour de la carte The Things Uno
+qui intègre une puce LoRa de chez Microchip.
+
+A ce stade, les différentes étapes de configuration sont montrées sur le tutorial suivant:
+```https
+   https://www.youtube.com/watch?v=28Fh5OF8ev0
+```
+
+
 ## Tache 5:
 Le bash !
 
