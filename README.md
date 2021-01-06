@@ -135,10 +135,7 @@ Dans le client, on tape :
 ```sql
  CREATE USER alassane_samia WITH PASSWORD 'alassane_samia' WITH ALL PRIVILEGES
 ```
-Mainteanant, on peut déploier notre solution **node-red** et après pour y accéder,  on tape dans le navigateur :
-```http
-http://"adresse du serveur node-red":1800/ui
-```
+
 
 
 
